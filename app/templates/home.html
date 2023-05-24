@@ -1,0 +1,464 @@
+{% extends 'sidebar.html' %}
+{% load static %}
+{% block title %}
+E-Cart_home
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid" style="background-color: rgb(19, 19, 19);height: 50px;">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 w-100" type="search" placeholder="Explore your favourite.." aria-label="Search">
+                <button class="btn btn-outline-dark" style="color: rgb(255, 135, 80);" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+
+        </div>
+        <div class="col-lg-4"></div> 
+    </div>
+      
+</div><br>
+
+<section id="section0">
+
+
+    <div class="container-fluid">
+
+        {% include 'carousel.html' %}
+
+       
+
+    </div>
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="rounded-image">
+                <img src="{% static 'images/r1.jpg' %}" alt="Your Image">
+                <div class="overlay">
+                  <div class="overlay-text">
+                    Fashion
+                  </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="col-lg-3">
+            <div class="rounded-image">
+                <img src="{% static 'images/r8.png' %}" alt="Your Image">
+                <div class="overlay">
+                  <div class="overlay-text">
+                    Electronics
+                  </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="col-lg-3">
+            <div class="rounded-image">
+                <img src="{% static 'images/r5.jpg' %}" alt="Your Image">
+                <div class="overlay">
+                  <div class="overlay-text">
+                    Mobiles
+                  </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="col-lg-3">
+            <div class="rounded-image">
+                <img src="{% static 'images/r7.webp' %}" alt="Your Image">
+                <div class="overlay">
+                  <div class="overlay-text">
+                    Home
+                  </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+</div><br>
+<marquee style="color: rgb(255, 155, 84);margin-bottom: 5px;margin-top: 10px;">Flash sales ends soon...</marquee><br>
+
+  
+</section><br><br>
+
+
+<section id="section1">
+    <div class="row">
+      <div class="col-lg-12">
+          <h5 class="text-white">Trending Now</h5>
+      </div>
+    </div>
+  
+    <div class="row">
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/el1.jpg' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">15000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+              
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/el1.jpg' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">15000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/el1.jpg' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">15000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/el1.jpg' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">15000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+  
+      <center><button class="btn btn-outline-dark" style="margin-bottom: 20px;margin-top: 20px; color: rgb(253, 155, 69);" type="submit">View All</button></center> 
+    </div> 
+</section><br>
+
+<section id="section2">
+    <div class="row">
+      <div class="col-lg-12">
+          <h5 class="text-white">Best of Fashion</h5>
+      </div>
+    </div>
+  
+    <div class="row">
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/fa2.webp' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">5000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+              
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/fa2.webp' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">5000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/fa2.webp' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">5000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/fa2.webp' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">5000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+  
+      <center><button class="btn btn-outline-dark" style="margin-bottom: 20px;margin-top: 20px; color: rgb(253, 155, 69);" type="submit">View All</button></center> 
+    </div> 
+</section><br>  
+
+<section id="section3">
+    <div class="row">
+      <div class="col-lg-12">
+          <h5 class="text-white">Best of Electronics</h5>
+      </div>
+    </div>
+  
+    <div class="row">
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/t1.jpg' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">55000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+              
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/t1.jpg' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">55000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/t1.jpg' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">55000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div class="card movie-card">
+          <img src="{% static 'images/t1.jpg' %}" alt="Movie Poster">
+          <div class="card-body movie-details">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text" style="color: rgb(189, 189, 189);">55000/-</p>
+              <button class="btn btn-outline-dark mt-5" style="color: rgb(253, 150, 77);" type="submit">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+  
+      <center><button class="btn btn-outline-dark" style="margin-bottom: 20px;margin-top: 20px; color: rgb(253, 155, 69);" type="submit">View All</button></center> 
+    </div> 
+</section><br>
+<hr style="color: rgb(255, 155, 84);">
+
+
+
+<section id="sectionlast">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3">
+          <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Company</h5>
+          <ul>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">About Us</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Contact Us</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Privacy Policy</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Terms & Condition</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Quick Links</h5>
+          <ul>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Home</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Fashion</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Mobiles</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Electronics</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Contact</h5>
+          <ul>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;"><i class="bi bi-geo m-2"></i>Banglore</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;"><i class="bi bi-telephone m-2"></i>0481-0772255</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;"><i class="bi bi-instagram m-2"></i><i class="bi bi-facebook m-2"></i><i class="bi bi-twitter m-2"></i><i class="bi bi-linkedin m-2"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Connect with Us</h5>
+         
+          <p style="color: rgb(255, 255, 255);"><p style="color: rgb(255, 255, 255);text-decoration: none;">Subscribe our email for <br>more updates </p></p>
+          <p style="color: rgb(255, 255, 255);">
+            <nav class="navbar">
+              <div class="container-fluid" style="background: transparent;">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
+                  <button class="btn btn-outline-dark" style="color: rgb(253, 150, 77);" type="submit">Subscribe</button>
+                </form>
+              </div>
+              
+            </nav>
+          </p>
+                 
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="card-footer" style="height: 45px; background-color: rgb(19, 19, 19);">
+    <p class="text-white text-center"><i class="bi bi-info-circle"></i>Ecart.com | All rights reserved | e-cart@gmail.com</p>
+  </div>
+  
+  
+  
+  
+
+
+
+
+
+
+
+<style>
+    .movie-card {
+      position: relative;
+      width: 200px;
+      height: 280px;
+      overflow: hidden;
+      background-color: black;
+      margin-left: 10px;
+      margin-top: 10px;
+      
+      
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .movie-details {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .movie-card:hover .movie-details {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .movie-details h2,
+    .movie-details p {
+      margin: 0;
+    }
+  </style>
+  <style>
+    .rounded-image {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s;
+    }
+
+    .rounded-image:hover {
+      transform: scale(1.1);
+    }
+
+    .rounded-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .rounded-image .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .rounded-image:hover .overlay {
+      opacity: 1;
+    }
+
+    .rounded-image .overlay-text {
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+
+
+{% endblock %}
