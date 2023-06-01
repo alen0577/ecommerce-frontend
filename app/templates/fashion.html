@@ -1,0 +1,65 @@
+{% extends 'sidebar.html' %}
+{% load static %}
+{% block title %}
+E-Cart_Fashions
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid" style="background-color: rgb(19, 19, 19);height: 50px;">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 w-100" type="search" placeholder="Search for products,brands and more..." aria-label="Search">
+                <button class="btn btn-outline-dark" style="color: rgb(255, 135, 80);" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+
+        </div>
+        <div class="col-lg-4"></div> 
+    </div>
+      
+</div><br>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a style="color: rgb(190, 190, 190);text-decoration: none;" href="/">Home</a></li>
+          <li class="breadcrumb-item"><a style="color: rgb(190, 190, 190);text-decoration: none;" href="/">Fashion</a></li>
+          <li class="breadcrumb-item active" style="color: rgb(190, 190, 190);" aria-current="page">Men</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="container-fluid">
+    <h6 class="ms-lg-3 mt-lg-4 text-light d-inline-block">Mens Fashion <p class="d-inline-block" style="color: rgb(190, 190, 190);font-size: small;">(showing 1-8 products of 12500 products)</p></h6>
+    <nav class="nav">
+        <a class="nav-link sort active" aria-current="page" href="#">Sort by</a>
+        <a class="nav-link sort" href="#">Popularity</a>
+        <a class="nav-link sort" href="#">Price-Low to High</a>
+        <a class="nav-link sort" href="#">Price-High to Low</a>
+        <a class="nav-link sort" href="#">Newest First</a>
+      </nav>
+</div>
+<section id="section1">
+    
+</section>
+
+
+
+
+
+
+
+
+
+<style>
+    a.sort{
+        color: rgb(190, 190, 190);
+    }
+    a.sort:hover{
+        color: white;
+    }
+
+</style>
+{% endblock %}

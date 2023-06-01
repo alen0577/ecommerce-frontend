@@ -96,12 +96,12 @@
    
         }
         
-        a{
+        div.sidebar a{
           font-size: 1rem; /* default font size */
           transition: font-size 0.2s ease-in-out; /* transition effect */
           text-decoration:none ;    
         }
-        a:hover{
+        div.sidebar a:hover{
           font-size: 1.1rem; /* larger font size on hover */
               
         }
@@ -113,10 +113,18 @@
         <ul>
             <li class="menu-item"><a href="#"><h1 class="title" >E-Cart</h1></a></li>
             <li class="menu-item"><a href="/"><i class="bi bi-house"></i> Home</a></li>
-            <li class="menu-item"><a href="#"><i class="bi bi-bag"></i> Fashion</a></li>
+            <li class="menu-item dropdown">
+                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bag"></i> Fashion</a>
+                <ul class="dropdown-menu bg-dark">
+                    <li><a class="dropdown-item " href="">Men</a></li>
+                    <li><a class="dropdown-item" href="#">Women</a></li>
+                    <li><a class="dropdown-item" href="#">Baby & Kids</a></li>
+                    
+                </ul>
+            </li>
             <li class="menu-item"><a href="#"><i class="bi bi-phone"></i> Mobiles</a></li>
             <li class="menu-item"><a href="#"><i class="bi bi-laptop"></i> Electronics</a></li>
-            <li class="menu-item"><a href="#"><i class="bi bi-cart"></i> Cart</a></li> 
+            <li class="menu-item"><a href="{% url 'cart' %}"><i class="bi bi-cart"></i> Cart</a></li> 
             <li class="menu-item"><a href="{% url 'login' %}"><i class="bi bi-person"></i> Login</a></li> 
             
             

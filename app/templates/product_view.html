@@ -1,0 +1,155 @@
+{% extends 'sidebar.html' %}
+{% load static %}
+{% block title %}
+E-Cart_Fashions
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid" style="background-color: rgb(19, 19, 19);height: 50px;">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 w-100" type="search" placeholder="Search for products,brands and more..." aria-label="Search">
+                <button class="btn btn-outline-dark" style="color: rgb(255, 135, 80);" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+
+        </div>
+        <div class="col-lg-4"></div> 
+    </div>
+      
+</div><br>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a style="color: rgb(190, 190, 190);text-decoration: none;" href="/">Home</a></li>
+          <li class="breadcrumb-item"><a style="color: rgb(190, 190, 190);text-decoration: none;" href="/">Fashion</a></li>
+          <li class="breadcrumb-item"><a style="color: rgb(190, 190, 190);text-decoration: none;" href="/">Men</a></li>
+          <li class="breadcrumb-item active" style="color: rgb(190, 190, 190);" aria-current="page">Formal Blazer</li>
+        </ol>
+    </nav>
+    <hr style="color: rgb(255, 170, 50);">
+</div>
+
+
+<section id="section1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="card mb-3 bg-light shadow p-3 mb-5 bg-body-tertiary rounded m-lg-4" style="max-width: 900px;">
+
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'images/fa2.webp' %}" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+
+              <h5 class="card-title"><b>Peter England</b></h5>
+              <p class="card-text">Men Self Design Formal Blazer  (Black)</p>
+              <h6 class="card-text d-inline-block"><b><i class="bi bi-currency-rupee"></i>5000</b>  <s>10000/-</s></h6>
+              <p class="card-text d-inline-block text-success ms-lg-4">50% offer</p>
+              <p class="card-text  text-danger ">Hurry, only 8 left</p>
+              <label class="bg-success text-light d-inline-block">4.5 <i class="bi bi-star-fill"></i></label>
+              <p class="card-text d-inline-block ms-lg-4">56 ratings and 4 reviews</p><br>
+              <p for="size" class="card-text d-inline-block">Select a size:</p>
+              <select class="d-inline-block" id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select><br>
+              <p class="card-text d-inline-block">Delivery by 5 June, Monday|</p>
+              <p class="card-text d-inline-block text-success">Free <i class="bi bi-currency-rupee"></i>40 </p>
+              <p class="card-text mt-0 text-warning"><small>If ordered before 5:00 pm</small></p>
+              <p class="card-text d-inline-block ">Seller:</p>
+              <p class="card-text d-inline-block">FashionHub <label class="bg-success text-light d-inline-block btn-sm">4.8 <i class="bi bi-star-fill"></i></label></p><br>
+              <p class="card-text ms-lg-5"><small class="text-body-secondary">3 days return policy</small></p>
+              <button class="btn btn-outline-dark d-inline-block" type="button" ><a href="{% url 'cart' %}" style="color: rgb(255, 135, 80);text-decoration: none;">Buy Now</a></button>
+              <button class="btn btn-outline-dark d-inline-block" type="button" ><a href="{% url 'cart' %}" style="color: rgb(255, 135, 80);text-decoration: none;">Add to Cart</a></button>
+
+            </div>
+          </div> 
+        </div>                         
+      </div>
+    </div>
+           
+  </div>
+    
+</section>
+
+
+<section id="sectionlast">
+    <hr style="color: rgb(255, 170, 50);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3">
+          <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Company</h5>
+          <ul>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">About Us</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Contact Us</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Privacy Policy</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Terms & Condition</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Quick Links</h5>
+          <ul>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Home</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Fashion</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Mobiles</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Electronics</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Contact</h5>
+          <ul>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;"><i class="bi bi-geo m-2"></i>Banglore</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;"><i class="bi bi-telephone m-2"></i>0481-0772255</a></li>
+            <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;"><i class="bi bi-instagram m-2"></i><i class="bi bi-facebook m-2"></i><i class="bi bi-twitter m-2"></i><i class="bi bi-linkedin m-2"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Connect with Us</h5>
+         
+          <p style="color: rgb(255, 255, 255);"><p style="color: rgb(255, 255, 255);text-decoration: none;">Subscribe our email for <br>more updates </p></p>
+          <p style="color: rgb(255, 255, 255);">
+            <nav class="navbar">
+              <div class="container-fluid" style="background: transparent;">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
+                  <button class="btn btn-outline-dark" style="color: rgb(253, 150, 77);" type="submit">Subscribe</button>
+                </form>
+              </div>
+              
+            </nav>
+          </p>
+                 
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="card-footer" style="height: 45px; background-color: rgb(19, 19, 19);">
+    <p class="text-white text-center"><i class="bi bi-info-circle"></i>Ecart.com | All rights reserved | e-cart@gmail.com</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<style>
+    a.sort{
+        color: rgb(190, 190, 190);
+    }
+    a.sort:hover{
+        color: white;
+    }
+
+</style>
+{% endblock %}

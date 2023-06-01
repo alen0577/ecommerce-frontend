@@ -10,4 +10,11 @@ def register(request):
 def home(request):
     return render(request,'home.html')
          
-    
+def fashionpage(request):
+    return render(request,'fashion.html')    
+
+def product_view(request):
+    return render(request, 'product_view.html')   
+
+def cart(request):
+    return render(request, 'cart.html')   
